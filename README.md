@@ -1,6 +1,6 @@
 # ECS2038-Group-Coursework-
 
-The files included all need to be in the same folder when ran, as some reference other ones, and they should be ran in the following order;
+The files included all need to be in the same folder when ran, as some reference other ones, and they should be ran in the following order:
 
 1) parameters.py
 2) nonlinear_dynamics.py
