@@ -161,7 +161,7 @@ print(D_num)
 
 
 #Build control.StateSpace object
-ss_sys = control.ss(A_num, B_num, C_num, D_num)
+ss_sys = control.ss(A_num, B_num, C_num, D_num) #control.ss(...) creates a state-space system object from the 4 matrices.
 
 print("\n" + "=" * 70)
 print("control.StateSpace object")
@@ -175,9 +175,9 @@ print(ss_sys)
 
 
 # Eigenvalues of A → open-loop poles
-eigenvalues = np.linalg.eigvals(A_num)
+eigenvalues = np.linalg.eigvals(A_num) #np.linalg.eigvals(A_num) computes the eigenvalues of the A matrix
 print("\nOpen-loop poles (eigenvalues of A):")
-for ev in eigenvalues:
+for ev in eigenvalues:  # loops through each eigenvalue one by one
     stability = "stable" if ev.real < 0 else "UNSTABLE"
     print(f"  {ev:+.4f}   [{stability}]")
 
