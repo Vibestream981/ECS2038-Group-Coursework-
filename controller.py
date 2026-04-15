@@ -43,7 +43,7 @@ class PIDController:
                  Ki: float = DEFAULT_KI,
                  Kd: float = DEFAULT_KD,
                  N:  float = DEFAULT_N,
-                 A=None, B=None, C=None, D=None):
+                 A=None, B=None, C=None, D=None):    #The class constructor. The = DEFAULT_KP means: "if you don't provide a value for Kp, use DEFAULT_KP". So PIDController() creates a controller with the tuned gains, but PIDController(Kp=30000) overrides just Kp.
 
         self.Kp = Kp
         self.Ki = Ki
